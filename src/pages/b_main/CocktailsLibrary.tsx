@@ -1,10 +1,9 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View} from "react-native";
 
-export default function Home() {
+export default function CocktailsLibrary() {
     return (
         <View style={styles.container}>
-            <Text>Page Home</Text>
-            <Text>Page Home</Text>
+            <Text>Page de la librairie</Text>
         </View>
     );
 }
