@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         display: "flex",
         backgroundColor: "#FBB4A5",
         width: "100%",
-        height: 77,
+        height: 100,
         justifyContent: "center",
     }
 })

@@ -1,12 +1,14 @@
 import {FC} from 'react';
 import {View, Text} from "react-native";
+import ResearchInput from "./ResearchInput";
 
-const MyComponent: FC<{}> = ({}) => {
+const SearchBar: FC<{}> = ({}) => {
+    let search;
     return (
         <View>
-            <Text>Bla</Text>
+            <ResearchInput/>
         </View>
     );
 };
 
-export default MyComponent;
+export default SearchBar;
