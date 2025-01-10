@@ -6,24 +6,26 @@ import {
 } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Button} from '@react-navigation/elements';
+import TopNavbar from "../../component/navbar/TopNavbar";
+import BottomNavbar from "../../component/navbar/BottomNavbar";
 
 export default function Home() {
     const navigation:any = useNavigation();
     return (
-        <View style={styles.container}>
-            <Button onPress={() => navigation.navigate('FiltersPage')}>
-                Go to La page de filtre
-            </Button>
-            <Button onPress={() => navigation.navigate('CocktailDetails')}>
-                Go to La page de Cocktails
-            </Button>
-            <Button onPress={() => navigation.navigate('CocktailsLibrary')}>
-                Go to La page de librairie
-            </Button>
-            <Button onPress={() => navigation.navigate('Details')}>
-                Go to Details
-            </Button>
-        </View>
+            <View style={styles.container}>
+                <Button onPress={() => navigation.navigate('FiltersPage')}>
+                    Go to La page de filtre
+                </Button>
+                <Button onPress={() => navigation.navigate('CocktailDetails')}>
+                    Go to La page de Cocktails
+                </Button>
+                <Button onPress={() => navigation.navigate('CocktailsLibrary')}>
+                    Go to La page de librairie
+                </Button>
+                <Button onPress={() => navigation.navigate('Details')}>
+                    Go to Details
+                </Button>
+            </View>
     );
 }
 
