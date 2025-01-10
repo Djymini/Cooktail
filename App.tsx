@@ -1,8 +1,12 @@
 
-import LayoutWithBars from "./src/component/layout/LayoutWithBars";
+import { StyleSheet} from 'react-native';
+import {NavigationContainer} from "@react-navigation/native";
+import RootStack from "./src/rooting/RootStack";
 
 export default function App() {
   return (
-      <LayoutWithBars/>
+    <NavigationContainer>
+      <RootStack/>
+    </NavigationContainer>
   );
 }
