@@ -1,15 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Home from "./src/pages/b_main/Home";
-import CocktailDetails from "./src/pages/b_main/CocktailDetails";
-import CocktailsLibrary from "./src/pages/b_main/CocktailsLibrary";
+import { StyleSheet} from 'react-native';
+import {NavigationContainer} from "@react-navigation/native";
+import RootStack from "./src/rooting/RootStack";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <CocktailsLibrary/>
-    </View>
+    <NavigationContainer>
+      <RootStack/>
+    </NavigationContainer>
   );
 }
 
